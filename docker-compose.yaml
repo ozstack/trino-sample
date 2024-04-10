@@ -7,8 +7,8 @@ services:
       - 8080:8080
     volumes:
       - './etc:/etc/trino'
-      - '/data/files:/data/files'
-      - '/data/trino:/var/trino/data'
+      - './data/files:/data/files'
+      - './data/trino:/var/trino/data'
   minio:
     image: minio/minio
     restart: always
